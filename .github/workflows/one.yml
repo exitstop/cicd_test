@@ -7,13 +7,9 @@ jobs:
     name: if
     runs-on: ubuntu-latest
     steps:
-      - name: false
-        run: |
-          false
+      - run: false
       if: succeeded() || failed()
-      - name: true
-        run: |
-          true
+      - run: true
       if: succeeded() || failed()
       - run: echo runs always, even if the prior step was cancelled
         if: always()
