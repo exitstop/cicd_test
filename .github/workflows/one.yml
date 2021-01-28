@@ -4,12 +4,14 @@ on: [push]
 
 jobs:
   job_1:
-    name: if
+    name: Add 3 and 7
     runs-on: ubuntu-latest
     steps:
-      - run: false
-      if: succeeded() || failed()
-      - run: true
-      if: succeeded() || failed()
-      - run: echo always, even if the prior step was cancelled
+      - shell: bash
+        run: |
+          false
+        if: succeeded() || failed()
+      - shell: bash
+        run: |
+          false
         if: always()
