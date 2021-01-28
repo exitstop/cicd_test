@@ -8,12 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: false
-      - shell: bash
         run: |
           false
       if: succeeded() || failed()
       - name: true
-      - shell: bash
         run: |
           true
       if: succeeded() || failed()
