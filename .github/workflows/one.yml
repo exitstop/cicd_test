@@ -11,5 +11,5 @@ jobs:
       if: succeeded() || failed()
       - run: true
       if: succeeded() || failed()
-      - run: echo runs always, even if the prior step was cancelled
+      - run: echo always, even if the prior step was cancelled
         if: always()
