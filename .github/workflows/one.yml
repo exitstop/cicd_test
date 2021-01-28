@@ -7,14 +7,17 @@ jobs:
     name: Add 3 and 7
     runs-on: ubuntu-latest
     steps:
+      - name: step 1
       - shell: bash
         run: |
           false
         continue-on-error: true
+      - name: step 2
       - shell: bash
         run: |
           false
         continue-on-error: false
+      - name: step 3
       - shell: bash
         run: |
           true
