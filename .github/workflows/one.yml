@@ -15,6 +15,11 @@ jobs:
         with:
           name: homework
           path: math-homework.txt
+    name: Add 3 and 7
+    steps:
+      - shell: bash
+        run: |
+          echo step 2
 
   job_2:
     name: Multiply by 9
